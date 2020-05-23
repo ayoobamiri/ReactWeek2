@@ -5,15 +5,21 @@ class Student {
         this.community = community;
     }
    
-
-
-registerStudent(student) {
-    if (this.students.filter(s => s.email === student.email).length) {
-        console.log(`This student is already registered`)
-    } else {
-        this.students.push(student);
-        console.log(`Registering ${student.email} to the bootcamp Web Dev Fundamentals.`)
-    }
-    return this.students;
 }
+
+class Bootcamp {
+    constructor(name, level, students) {
+        this.name = name;
+        this.level = level;
+        this.students = [];
+    }
+    registerStudent(student) {
+        if (this.students.filter(s => s.email === student.email).length) {
+            console.log(`This student is already registered`)
+        } else {
+            this.students.push(student);
+            console.log(`Registering ${student.email} to the bootcamp Web Dev Fundamentals.`)
+        }
+        return this.students;
+    }
 }
