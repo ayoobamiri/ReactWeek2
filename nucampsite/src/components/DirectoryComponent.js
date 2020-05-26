@@ -53,7 +53,7 @@ class Directory extends Component {
             <div className="container">
                 <div className="row">
                     {directory}
- {/* Directory means javaScript codes under the render() */}
+ {/* Directory means javaScript codes under the render() for run */}
                 </div>
             </div>
         );
